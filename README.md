@@ -88,3 +88,9 @@ asm.MOV(Register64.RAX, 0x123456789ABCDEF0)
 ```
 **AsmFlow** - Fluent Assembly Code Generation for .NET Developers 🚀
 
+<!--- 
+استراتژی پیاده‌سازی
+3.	فاز ۳: پشتیبانی از چندین Assembler
+4.	فاز ۴: ابزارهای تحلیل و بهینه‌سازی
+5.	فاز ۵: اکوسیستم کامل (Extensions, Testing, Visualization)
+ --->

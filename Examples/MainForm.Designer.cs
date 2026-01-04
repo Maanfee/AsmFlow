@@ -30,14 +30,16 @@
         {
             txtResult = new RichTextBox();
             btnExamples = new Button();
+            btnErrorTest = new Button();
             SuspendLayout();
             // 
             // txtResult
             // 
             txtResult.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            txtResult.Font = new Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txtResult.Location = new Point(12, 41);
             txtResult.Name = "txtResult";
-            txtResult.Size = new Size(562, 276);
+            txtResult.Size = new Size(762, 376);
             txtResult.TabIndex = 0;
             txtResult.Text = "";
             // 
@@ -45,23 +47,34 @@
             // 
             btnExamples.Location = new Point(12, 12);
             btnExamples.Name = "btnExamples";
-            btnExamples.Size = new Size(75, 23);
+            btnExamples.Size = new Size(120, 23);
             btnExamples.TabIndex = 1;
-            btnExamples.Text = "&Examples";
+            btnExamples.Text = "&Run All Examples";
             btnExamples.UseVisualStyleBackColor = true;
             btnExamples.Click += btnExamples_Click;
+            // 
+            // btnErrorTest
+            // 
+            btnErrorTest.Location = new Point(138, 12);
+            btnErrorTest.Name = "btnErrorTest";
+            btnErrorTest.Size = new Size(120, 23);
+            btnErrorTest.TabIndex = 2;
+            btnErrorTest.Text = "&Test Errors";
+            btnErrorTest.UseVisualStyleBackColor = true;
+            btnErrorTest.Click += btnErrorTest_Click;
             // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(586, 329);
+            ClientSize = new Size(786, 429);
+            Controls.Add(btnErrorTest);
             Controls.Add(btnExamples);
             Controls.Add(txtResult);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             Name = "MainForm";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Main ";
+            Text = "AsmFlow Examples";
             WindowState = FormWindowState.Maximized;
             ResumeLayout(false);
         }
@@ -70,5 +83,6 @@
 
         private RichTextBox txtResult;
         private Button btnExamples;
+        private Button btnErrorTest;
     }
 }
